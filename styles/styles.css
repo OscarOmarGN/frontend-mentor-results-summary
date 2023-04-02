@@ -1,0 +1,264 @@
+:root{
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobal-blue: hsl(234, 85%, 45%);
+}
+
+*, 
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+  font-family: Hanken Grotesk;
+  box-sizing: inherit;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(221, 100%, 96%);
+
+}
+
+.results-content{
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(0, 0%, 100%);
+  margin: 0 0 .5rem;
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 35px 35px;
+}
+
+.results{
+  width: 75%;
+  height: 90%;
+  font-size: 1rem;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.results-number{
+  width: 35vw;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.results-number h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.results-title{
+  font-size: 1.15rem;
+  margin-top: .5rem;
+}
+
+.results-description{
+  margin-bottom: .8rem;
+}
+
+.results-title, 
+.results-description, 
+.results-number p{
+  color: hsl(241, 100%, 89%);
+}
+
+.hundred {
+  font-weight: 800;
+  color: rgb(176, 176, 176);
+}
+
+.category {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.category h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.summary-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary {
+  width: 90%;
+  margin: .5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.summary-title{
+  width: 87%;
+}
+
+.categories{
+  width: 94%;
+}
+
+.button-continue{
+  width: 95%;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: .5rem auto;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(221, 100%, 96%);
+}
+
+.attribution{
+  margin: 2rem 0 .5em;
+  text-align: center;
+}
+
+.categories-reaction h3{
+  color: var(--Light-red);
+}
+
+.categories-reaction{
+  background-color: hsla(0, 100%, 67%, .05);
+}
+
+.categories-memory h3{
+  color: var(--Orangey-yellow);
+}
+
+.categories-memory{
+  background-color: hsla(39, 100%, 56%, .05);
+}
+
+.categories-verbal h3{
+  color: var(--Green-teal);
+}
+
+.categories-verbal{
+  background-color: hsla(166, 100%, 37%, .05);
+}
+
+.categories-visual h3{
+  color: var(--Cobal-blue);
+}
+
+.categories-visual{
+  background-color: hsla(234, 85%, 45%, .05);
+}
+
+@media screen and (min-width: 1440px){
+  body{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main{
+    width: 40rem;
+    min-height: 30rem;
+    display: flex;
+    box-shadow: 7px 7px 10px 8px rgb(212, 212, 212);
+    border-radius: 35px;
+  }
+
+  .results-content{
+    height: 100%;
+    width: 50%;
+    border-radius: 35px;
+  }
+
+  .results{
+    width: 15rem;
+    margin: 1rem auto;
+    gap: 10px;
+  }
+
+  .results-number{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .results-number h2{
+    font-size: 5rem;
+  }
+
+  .results-title{
+    font-size: 1.3rem;
+  }
+
+  .results-description{
+    width: 14rem;
+    margin: auto;
+  }
+
+  .summary-content{
+    width: 50%;
+    height: 80%;
+    margin: auto;
+  }
+
+  .summary-title{
+    width: 80%;
+    font-size: 1.4rem;
+  }
+
+  .summary{
+    width: 80%;
+  }
+
+  .categories{
+    width: 100%;
+  }
+
+  .category{
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .button-continue{
+    font-size: 1.3rem;
+    cursor: pointer;
+
+  }
+
+  .button-continue:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+
+}
